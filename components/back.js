@@ -8,7 +8,7 @@ class Hello extends React.Component {
       class: "container"
     }, /*#__PURE__*/React.createElement("a", {
       class: "navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center",
-      href: "index.html"
+      href: "../index.html"
     }, /*#__PURE__*/React.createElement("img", {
       src: "../assets/image/logo.png",
       class: "width-auto"
