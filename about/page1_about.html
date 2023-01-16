@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="A well made and handcrafted Bootstrap 5 template"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png" />
+    <meta name="author" content="Holger Koenemann" />
+    <meta name="generator" content="Eleventy v2.0.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>About PPC</title>
+    <script src="../js/react.development.js"></script>
+    <script src="../js/react-dom.development.js"></script>
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/theme.min.css" />
+    <!-- Don't use this in production: -->
+    <script src="../js/babel.min.js"></script>
+  </head>
+  <style>
+    /* Lazy Load Styles */
+    .card-image {
+      display: block;
+      min-height: 20rem; /* layout hack */
+      background: #fff center center no-repeat;
+      background-size: cover;
+      filter: blur(3px); /* blur the lowres image */
+    }
+
+    .card-image > img {
+      display: block;
+      width: 100%;
+      opacity: 0; /* visually hide the img element */
+    }
+
+    .card-image.is-loaded {
+      filter: none; /* remove the blur on fullres image */
+      transition: filter 1s;
+    }
+
+    /* Layout Styles */
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      font-size: 16px;
+      font-family: sans-serif;
+    }
+
+    .card-list {
+      display: block;
+      margin: 1rem auto;
+      padding: 0;
+      font-size: 0;
+      text-align: center;
+      list-style: none;
+    }
+
+    .card {
+      display: inline-block;
+      width: 90%;
+      max-width: 20rem;
+      margin: 1rem;
+      font-size: 1rem;
+      text-decoration: none;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-0.5rem) scale(1.0125);
+      box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+    }
+
+    .card-description {
+      display: block;
+      padding: 1em 0.5em;
+      color: #515151;
+      text-decoration: none;
+    }
+
+    .card-description > h2 {
+      margin: 0 0 0.5em;
+    }
+
+    .card-description > p {
+      margin: 0;
+    }
+    /* inter-300 - latin */
+    @font-face {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: local(""), url("fonts/inter-v12-latin-300.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("fonts/inter-v12-latin-300.woff") format("woff");
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    /* inter-400 - latin */
+    @font-face {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local(""), url("fonts/inter-v12-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("fonts/inter-v12-latin-regular.woff") format("woff");
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: local(""), url("fonts/inter-v12-latin-500.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("fonts/inter-v12-latin-500.woff") format("woff");
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local(""), url("fonts/inter-v12-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url("fonts/inter-v12-latin-700.woff") format("woff");
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+  </style>
+  <body
+    class="bg-black text-white mt-0"
+    data-bs-spy="scroll"
+    data-bs-target="#navScroll"
+  >
+    <!---------------- NAVBAR ---------------------->
+    <div id="back"></div>
+    <!---------------- CONTENT ---------------------->
+    <main>
+      <div class="container" style="font-size: larger">
+        <div class="row d-flex justify-content-center py-vh-2 pb-0">
+          <div class="col-12 col-lg-10 col-xl-8">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="display-1 fw-bold text-center">
+                  （一）使命宣言<br />
+                  <span class="fs-4"
+                    >“建立一個強本外展，虛實整合、使徒性的和平教會。“</span
+                  >
+                </h1>
+                <p class="lead border-top pt-5 mt-5" data-aos="fade-up"></p>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-8">
+              <img
+                src="../assets/image/ch1_1.png"
+                width="1446"
+                height="982"
+                alt="abstract image"
+                class="img-fluid position-relative shadow"
+                data-aos="zoom-up"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-lg-10 col-xl-8">
+            <div class="row d-flex align-items-start" data-aos="fade-right">
+              <div class="col-12 col-lg-5">
+                <h2 class="h3 mt-5 border-top pt-5">強本外展</h2>
+                <p class="text-secondary">
+                  沒有強本的外展，是虛的外展；沒有外展的強本，是假的強本！
+                  因此，屏東和平教會致力於建造穩固、扎實、強盛的真理根基，幫助弟兄姐妹愛慕純正的道、有內容、能供應生命、活出小基督、彰顯大基督。
+                  <br />
+                  <br />
+                  而「外展檢驗強本」，當我們接受門徒訓練、裝備操練以後，也要奉差遣在各處傳揚基督、外展佈道、做主的見證人！
+                </p>
+              </div>
+              <div class="col-12 col-lg-7 p-5 mt-5">
+                <img src="../assets/image/ch1/A_109995.jpg" class="img-fluid" />
+              </div>
+            </div>
+            <div class="row d-flex align-items-start" data-aos="fade-right">
+              <div class="col-12 col-lg-7 p-5 mt-5">
+                <img src="../assets/image/ch1/A_108939.jpg" class="img-fluid" />
+              </div>
+              <div class="col-12 col-lg-5">
+                <h2 class="h3 mt-5 border-top pt-5">虛實整合</h2>
+                <p class="text-secondary">
+                  和平教會渴慕為神國開疆闢土，並相信虛擬世界也是一個「需祢世界」——需要耶穌之處！
+                  因此，我們在實體與線上的佈道皆不設限，每一處都是人們的革尼撒勒湖，是我們要為主得人如魚之處。
+                </p>
+              </div>
+            </div>
+            <div class="row d-flex align-items-start" data-aos="fade-right">
+              <div class="col-12 col-lg-5">
+                <h2 class="h3 mt-5 border-top pt-5">使徒性的</h2>
+                <p class="text-secondary">
+                  神呼召和平教會要成為「新世代使徒育成中心」，不斷裝備訓練、育成興起一代又一代的新世代使徒領袖，
+                  兩三個、兩三個的把人差遣出去，走遍城市的各個地方，經營禾場，門徒萬民，直到地極！
+                </p>
+              </div>
+              <div class="col-12 col-lg-7 p-5 mt-5">
+                <img src="../assets/image/ch1/A_109537.jpg" class="img-fluid" />
+              </div>
+            </div>
+            <div class="row d-flex align-items-start" data-aos="fade-right">
+              <div class="col-12 col-lg-12 text-center">
+                <h1 class="h3 mt-5 border-top pt-5">和平教會</h1>
+                <ul class="text-secondary" style="font-size: larger">
+                  <li class="pt-3">
+                    Prayer & Worship 經營敬拜（聚會）、成為聖殿的祭司
+                  </li>
+                  <li class="pt-3">
+                    Embrace the lost：經營禾場（佈道）、成為基督的精兵
+                  </li>
+                  <li class="pt-3">
+                    Awakening：經營門訓（裝備）、成為基督的門徒
+                  </li>
+                  <li class="pt-3">
+                    Connection：經營團契（關係）、成為上帝的家人
+                  </li>
+                  <li class="pt-3">
+                    Emliowerment：經營事工（團隊）、成為貴重的器皿
+                  </li>
+                </ul>
+              </div>
+              <ul class="card-list col-12 col-lg-12">
+                <li class="card">
+                  <img
+                    src="../assets/image/ch1/A_100726-1.jpg"
+                    class="img-fluid"
+                  />
+                </li>
+                <li class="card">
+                  <img
+                    src="../assets/image/ch1/DSC00623.jpg"
+                    class="img-fluid"
+                  />
+                </li>
+                <li class="card">
+                  <img
+                    src="../assets/image/ch1/DSC06420-5.jpg"
+                    class="img-fluid"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!---------------- FOOTER ---------------------->
+    <footer class="bg-black border-top border-dark">
+      <div class="container text-center small py-vh-2 border-top border-dark">
+        Copyright 2023 © Pingtung Peace Church. All rights reserved.
+      </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+      });
+    </script>
+    <script>
+      let scrollpos = window.scrollY;
+      const header = document.querySelector(".navbar");
+      const header_height = header.offsetHeight;
+
+      const add_class_on_scroll = () =>
+        header.classList.add("scrolled", "shadow-sm");
+      const remove_class_on_scroll = () =>
+        header.classList.remove("scrolled", "shadow-sm");
+
+      window.addEventListener("scroll", function () {
+        scrollpos = window.scrollY;
+
+        if (scrollpos >= header_height) {
+          add_class_on_scroll();
+        } else {
+          remove_class_on_scroll();
+        }
+
+        console.log(scrollpos);
+      });
+    </script>
+    <script src="../components/back.js"></script>
+  </body>
+</html>
