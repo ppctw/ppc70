@@ -3,8 +3,7 @@
   font-style: normal;
   font-family: "codropsicons";
   src: url("../fonts/codropsicons/codropsicons.eot");
-  src: url("../fonts/codropsicons/codropsicons.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"),
     url("../fonts/codropsicons/codropsicons.woff") format("woff"),
     url("../fonts/codropsicons/codropsicons.ttf") format("truetype"),
     url("../fonts/codropsicons/codropsicons.svg#codropsicons") format("svg");
@@ -26,12 +25,30 @@
 }
 
 body {
-  background: #2f3238;
+  /* background: #000000; */
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
   color: #fff;
   font-weight: 400;
   font-size: 1em;
   font-family: "Raleway", Arial, sans-serif;
 }
+
+.bg-black {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+/* .bg-dark:hover p {
+  border-radius: 20px;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+} */
 
 a {
   outline: none;
@@ -465,10 +482,8 @@ figure.effect-hera figcaption::before {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg)
-    scale3d(0, 0, 1);
-  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg)
-    scale3d(0, 0, 1);
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(0, 0, 1);
+  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(0, 0, 1);
   -webkit-transform-origin: 50%;
   transform-origin: 50%;
 }
@@ -517,10 +532,8 @@ figure.effect-hera p a:nth-child(4) i {
 
 figure.effect-hera:hover figcaption::before {
   opacity: 1;
-  -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg)
-    scale3d(1, 1, 1);
-  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg)
-    scale3d(1, 1, 1);
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(1, 1, 1);
+  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(1, 1, 1);
 }
 
 figure.effect-hera:hover h2 {
@@ -531,11 +544,7 @@ figure.effect-hera:hover h2 {
 
 figure.effect-hera:hover p i:empty {
   -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(
-    0,
-    0,
-    0
-  ); /* just because it's stronger than nth-child */
+  transform: translate3d(0, 0, 0); /* just because it's stronger than nth-child */
   opacity: 1;
 }
 
@@ -932,10 +941,8 @@ figure.effect-apollo figcaption::before {
   content: "";
   -webkit-transition: -webkit-transform 0.6s;
   transition: transform 0.6s;
-  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
-    translate3d(0, -100%, 0);
-  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
-    translate3d(0, -100%, 0);
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
 }
 
 figure.effect-apollo p {
@@ -963,10 +970,8 @@ figure.effect-apollo:hover img {
 }
 
 figure.effect-apollo:hover figcaption::before {
-  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
-    translate3d(0, 100%, 0);
-  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
-    translate3d(0, 100%, 0);
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
 }
 
 figure.effect-apollo:hover p {
@@ -1653,3 +1658,5 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+

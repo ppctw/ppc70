@@ -1,13 +1,4 @@
 .menu,
-.nav-icon span {
-  transition: all 0.3s ease-in-out;
-}
-
-.menu .nav-menu li a,
-.nav-menu li a {
-  line-height: 56px;
-}
-
 *,
 ::after,
 ::before {
@@ -133,13 +124,9 @@ body {
   width: 100%;
 }
 
-.nav-icon,
-.navigation {
-  float: right;
-}
-
 .custom-row::after {
-  content: "";
+  min-height: 100%; /*外層高度100%*/
+  margin-bottom: -50px; /*隨footer高度需做調整*/
   display: table;
   clear: both;
 }
@@ -177,104 +164,6 @@ body {
   padding-top: 170px !important;
 }
 
-.nav-icon-container {
-  display: block;
-}
-
-.nav-icon {
-  width: 50px;
-  height: 50px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  position: relative;
-  cursor: pointer;
-  z-index: 100;
-}
-
-.nav-icon span {
-  width: 0%;
-  height: 2px;
-  background-color: #fff;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.nav-icon-1 {
-  top: 30%;
-}
-
-.nav-icon-2 {
-  top: 50%;
-}
-
-.nav-icon-3 {
-  top: 70%;
-}
-
-.nav-icon.active .nav-icon-1 {
-  top: 50%;
-  transform: rotate(45deg);
-  left: 22%;
-}
-
-.nav-icon.active .nav-icon-3 {
-  top: 50%;
-  transform: rotate(-45deg);
-  left: 22%;
-}
-
-.nav-icon.active .nav-icon-2 {
-  width: 0;
-}
-
-.nav-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.nav-menu li {
-  list-style: none;
-  position: relative;
-}
-
-.nav-menu li a {
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0 20px;
-}
-
-.nav-menu li:after,
-.nav-menu li:before {
-  content: "";
-  position: absolute;
-  height: 3px;
-  background-color: rgba(255, 255, 255, 0.2);
-  bottom: 0;
-  width: 0;
-  transition: all 0.3s ease-in-out;
-}
-
-.nav-menu li:before {
-  left: 0;
-}
-
-.nav-menu li:after {
-  right: 0;
-}
-
-.nav-menu li:hover:after,
-.nav-menu li:hover:before {
-  width: 50%;
-}
-
-.nav-menu li.active:after,
-.nav-menu li.active:before {
-  background-color: rgba(0, 128, 128, 1);
-}
-
 .menu {
   width: 200px;
   background-color: #0b466c;
@@ -292,16 +181,6 @@ body {
   right: 0;
 }
 
-.menu .nav-menu {
-  flex-direction: column;
-  width: 150px;
-}
-
-.menu .nav-menu li {
-  margin: 10px 0;
-  width: 80%;
-}
-
 .box-tab {
   margin: 10px 0;
 }
@@ -310,7 +189,7 @@ body {
   margin: auto;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.07);
   background-color: #fff;
-  border: 5px solid #f5f5f5;
+  /* border: 5px solid #f5f5f5; */
 }
 
 .tab-container {
@@ -1311,19 +1190,15 @@ body {
 
 .effect.effect-six .tab-text:before {
   background-color: rgba(255, 255, 255, 0.4);
-  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
-    translate3d(0, -101%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -101%, 0);
   transition: all 0.6s;
-  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
-    translate3d(0, -101%, 0);
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -101%, 0);
   -webkit-transition: all 0.6s;
 }
 
 .effect.effect-six:hover .tab-text:before {
-  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
-    translate3d(0, 101%, 0);
-  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
-    translate3d(0, 101%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 101%, 0);
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 101%, 0);
 }
 
 .effect.effect-seven {
@@ -1743,11 +1618,7 @@ body {
   content: "";
   width: 180%;
   height: 180%;
-  background: linear-gradient(
-    -45deg,
-    rgba(0, 0, 0, 0) 49%,
-    rgba(0, 0, 0, 0.45) 50%
-  );
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0.45) 50%);
   position: absolute;
   top: 0;
   left: 0;
@@ -1770,22 +1641,18 @@ body {
   );
   transform: rotate3d(-1, 1, 0, 20deg);
   transform-origin: 50% 50%;
-  transition: width 0.2s linear 0.2s, height 0.2s linear 0.2s,
-    bottom 0.2s linear 0s, right 0.2s linear 0s;
+  transition: width 0.2s linear 0.2s, height 0.2s linear 0.2s, bottom 0.2s linear 0s,
+    right 0.2s linear 0s;
   -webkit-transform: rotate3d(-1, 1, 0, 20deg);
   -webkit-transform-origin: 50% 50%;
-  -webkit-transition: width 0.2s linear 0.2s, height 0.2s linear 0.2s,
-    bottom 0.2s linear 0s, right 0.2s linear 0s;
+  -webkit-transition: width 0.2s linear 0.2s, height 0.2s linear 0.2s, bottom 0.2s linear 0s,
+    right 0.2s linear 0s;
 }
 
 .effect.effect-ten:hover .tab-text:after {
   top: -80%;
   left: -80%;
-  background: linear-gradient(
-    -45deg,
-    rgba(0, 0, 0, 0) 49%,
-    rgba(0, 0, 0, 0.45) 60%
-  );
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0.45) 60%);
 }
 
 .effect.effect-ten:hover .tab-text:before {
@@ -1793,10 +1660,10 @@ body {
   height: 100%;
   bottom: 50%;
   right: 50%;
-  -webkit-transition: width 0.2s linear 0s, height 0.2s linear 0s,
-    bottom 0.2s linear 0.2s, right 0.2s linear 0.2s;
-  transition: width 0.2s linear 0s, height 0.2s linear 0s,
-    bottom 0.2s linear 0.2s, right 0.2s linear 0.2s;
+  -webkit-transition: width 0.2s linear 0s, height 0.2s linear 0s, bottom 0.2s linear 0.2s,
+    right 0.2s linear 0.2s;
+  transition: width 0.2s linear 0s, height 0.2s linear 0s, bottom 0.2s linear 0.2s,
+    right 0.2s linear 0.2s;
 }
 
 .effect.effect-ten .icons-block {
@@ -2101,4 +1968,28 @@ body {
   .effect h2 {
     font-size: 1.3rem !important;
   }
+}
+
+.toleft {
+  background: #111;
+  border-radius: 50%;
+  border-color: none;
+  display: inline-block;
+  padding: 10px 10px;
+  color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.toleft:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #000000;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
