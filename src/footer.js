@@ -6,11 +6,11 @@ class Footer_c extends React.Component {
  
     return (   
       <div class="footer">
-      <div class="container text-center   py-vh-2 overflow:hidden">
+      <div class="container text-center    ">
           <div class="row-fluid">          
           <div class="span4 smallspacetop">
             <p class="smaller">
-              <span class="copyright">&copy; </span>  Copyright 2023 © Pingtung Peace Church.
+              Copyright 2023 © Pingtung Peace Church.
             </p>
           </div>
          

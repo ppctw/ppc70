@@ -28,7 +28,7 @@ var Navbar_component = function (_React$Component) {
           "button",
           {
             type: "button",
-            "class": "btn btn-navbar",
+            "class": "btn btn-navbar mt-5",
             "data-toggle": "collapse",
             "data-target": ".nav-collapse" },
           React.createElement("span", { "class": "icon-bar" }),

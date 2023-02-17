@@ -26,7 +26,7 @@ var Footer_c = function (_React$Component) {
         { "class": "footer" },
         React.createElement(
           "div",
-          { "class": "container text-center   py-vh-2 overflow:hidden" },
+          { "class": "container text-center    " },
           React.createElement(
             "div",
             { "class": "row-fluid" },
@@ -36,12 +36,7 @@ var Footer_c = function (_React$Component) {
               React.createElement(
                 "p",
                 { "class": "smaller" },
-                React.createElement(
-                  "span",
-                  { "class": "copyright" },
-                  "\xA9 "
-                ),
-                "  Copyright 2023 \xA9 Pingtung Peace Church."
+                "Copyright 2023 \xA9 Pingtung Peace Church."
               )
             ),
             React.createElement(

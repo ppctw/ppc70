@@ -8,7 +8,7 @@ class Navbar_component extends React.Component {
       <div class="container">
       <button
         type="button"
-        class="btn btn-navbar"
+        class="btn btn-navbar mt-5"
         data-toggle="collapse"
         data-target=".nav-collapse">
         <span class="icon-bar"></span>

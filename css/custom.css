@@ -1128,7 +1128,7 @@ ul.social-links>li.pinterest-link:hover {
 	display:block;
 	float:left;
 	border:1px solid #dddddd;
-	color:#999999;
+	color:#bfbbbb;
 	margin:0 7px 7px 0px;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
@@ -1452,10 +1452,10 @@ a:hover,a:focus {
 	margin-top:0px;
 }
 .footer {
-	height: 50px; /*設定footer本身高度*/	 
-	padding-top:30px;
-	padding-bottom:30px;
-	margin-top:30px;
+	height: 100px; /*設定footer本身高度*/	 
+	padding-top:10px;
+	padding-bottom:200px;
+	 
 }
 .footer hr {
 	border-top:1px solid #000;
