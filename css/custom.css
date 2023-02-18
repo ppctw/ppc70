@@ -919,13 +919,14 @@ ul.social-links>li.pinterest-link:hover {
 }
 /* MASONRY */
 .boxportfolio4 {
-	float:left;
-	padding-right:20px;
-	width:23.076923076923077%;
+	/* float:left; */
+	padding-right:5px;
+	width:25%;
 	display:inline-block;
 	margin-bottom:20px;
 	position:relative;
 	z-index:0;
+ 
 }
 .boxportfolio3 {
 	float:left;

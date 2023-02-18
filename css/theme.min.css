@@ -191,7 +191,8 @@ strong {
 }
 .small,
 small {
-  font-size: 0.875em;
+  font-size: 1.25em;
+  padding-top: 0.25rem;
 }
 a {
   color: var(--bs-link-color);
