@@ -42,6 +42,7 @@
     <link
       rel="stylesheet"
       href="css/effect.css" />
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -56,6 +57,33 @@
 
     <!-- Jquery - The rest of the scripts at the bottom-->
     <script src="js/jquery-1.9.0.min.js"></script>
+    <!-- Loading Animation CSS -->
+    <style>
+      #loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        z-index: 9999;
+      }
+      #loading::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      #loading img {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+    <!--  -->
   </head>
   <body>
     <!-- Header
@@ -66,10 +94,17 @@
       </div>
     </div>
     <!-- End Header -->
+    <!-- Loading Animation -->
+    <div id="loading">
+      <img
+        src="img/loading.svg"
+        alt="Loading..." />
+    </div>
+    <!--  -->
     <!-- Content
 ================================================== -->
     <div class="container">
-      <section class="col-12 tab-container effectTab-header">
+      <section class="tab-container effectTab-header">
         <div class="custom-row">
           <div
             class="wrapper"
@@ -77,9 +112,10 @@
             data-aos="fade-up">
             <h1 class="ti title text-white">一、認識和平教會</h1>
           </div>
-          <div class="grid col-12">
+
+          <div class="grid">
             <figure
-              class="effect-julia col-sm-12"
+              class="effect-julia"
               data-aos="fade-up">
               <a href="aboutPPC_page1.html">
                 <img
@@ -95,8 +131,10 @@
                 </figcaption>
               </a>
             </figure>
+          </div>
+          <div class="grid">
             <figure
-              class="effect-julia"
+              class="effect-julia col-6"
               data-aos="fade-left">
               <a href="aboutPPC_page2.html">
                 <img
@@ -112,7 +150,7 @@
               </a>
             </figure>
             <figure
-              class="effect-julia"
+              class="effect-julia col-6"
               data-aos="fade-up">
               <a href="aboutPPC.html">
                 <img
@@ -175,6 +213,13 @@
         }
 
         console.log(scrollpos);
+      });
+    </script>
+    <!-- Loading Anitmation script -->
+    <script>
+      window.addEventListener("load", function () {
+        var loadingScreen = document.getElementById("loading");
+        loadingScreen.style.display = "none";
       });
     </script>
     <!-- Placed at the end of the document so the pages load faster -->

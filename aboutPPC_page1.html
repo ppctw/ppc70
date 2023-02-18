@@ -56,6 +56,33 @@
 
     <!-- Jquery - The rest of the scripts at the bottom-->
     <script src="js/jquery-1.9.0.min.js"></script>
+    <!-- Loading Animation CSS -->
+    <style>
+      #loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        z-index: 9999;
+      }
+      #loading::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      #loading img {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+    <!--  -->
   </head>
   <body>
     <!-- Header
@@ -66,6 +93,13 @@
       </div>
     </div>
     <!-- End Header -->
+    <!-- Loading Animation -->
+    <div id="loading">
+      <img
+        src="img/loading.svg"
+        alt="Loading..." />
+    </div>
+    <!--  -->
     <!-- Content
 ================================================== -->
     <div class="container">
@@ -101,7 +135,7 @@
     <div class="row-fluid d-flex align-items-center justify-content-center">
       <div class="span4">
         <h2
-          class="h3 mt-5 border-top pt-5"
+          class="h3 mt-5 border-top pt-3"
           data-aos="zoom-up">
           強本外展
         </h2>
@@ -134,7 +168,7 @@
       </div>
       <div class="px-vw-1"></div>
       <div class="span4">
-        <h2 class="h3 mt-5 border-top pt-5">虛實整合</h2>
+        <h2 class="h3 mt-5 border-top pt-3">虛實整合</h2>
         <p class="text-secondary">
           和平教會渴慕為神國開疆闢土，並相信虛擬世界也是一個「需祢世界」——需要耶穌之處！
           因此，我們在實體與線上的佈道皆不設限，每一處都是人們的革尼撒勒湖，是我們要為主得人如魚之處。
@@ -145,7 +179,7 @@
     <div class="row-fluid d-flex align-items-center justify-content-center">
       <div class="span4">
         <h2
-          class="h3 mt-5 border-top pt-5"
+          class="h3 mt-5 border-top pt-3"
           data-aos="zoom-up">
           使徒性的
         </h2>
@@ -171,7 +205,7 @@
     <div class="container">
       <div class="align-items-center justify-content-center text-center">
         <p
-          class="lead border-top pt-5 mt-5"
+          class="lead border-top pt-3 mt-3"
           data-aos="fade-up"></p>
         <h2 data-aos="zoom-up">和平教會</h2>
         <div
@@ -183,46 +217,71 @@
           class="text-secondary"
           style="font-size: larger"
           data-aos="zoom-in-right">
-          <p class="pt-3">Prayer & Worship： 經營敬拜（聚會）、成為聖殿的祭司</p>
-          <p class="pt-3">Embrace the lost：經營禾場（佈道）、成為基督的精兵</p>
-          <p class="pt-3">Awakening：經營門訓（裝備）、成為基督的門徒</p>
-          <p class="pt-3">Connection：經營團契（關係）、成為上帝的家人</p>
-          <p class="pt-3">Emliowerment：經營事工（團隊）、成為貴重的器皿</p>
+          <p class="pt-3">-Prayer & Worship-</p>
+          <p class="">經營敬拜（聚會）、成為聖殿的祭司</p>
+          <!-- row2 -->
+          <p class="pt-3">-Embrace the lost-</p>
+          <p class="">經營禾場（佈道）、成為基督的精兵</p>
+          <!-- row3 -->
+          <p class="pt-3">-Awakening-</p>
+          <p class="">經營門訓（裝備）、成為基督的門徒</p>
+          <!-- row4 -->
+          <p class="pt-3">-Connection-</p>
+          <p class="">經營團契（關係）、成為上帝的家人</p>
+          <!-- row5 -->
+          <p class="pt-3">-Emliowerment-</p>
+          <p class="">經營事工（團隊）、成為貴重的器皿</p>
+          <!--  -->
         </ul>
       </div>
     </div>
-    <div class="d-flex align-items-center justify-content-center text-center">
+    <div class="align-items-center justify-content-center text-center">
       <img
         src="assets/image/ch1/A_100726-1.jpg"
-        class="img-polaroid span3"
+        class="img-polaroid"
         alt=""
-        data-aos="zoom-in-up" />
-      &nbsp;
+        style="width: 270px" />
+
       <img
         src="assets/image/ch1/DSC00623.jpg"
-        class="img-polaroid span3"
-        alt=""
-        data-aos="zoom-in-up" />
-      &nbsp;
+        class="img-polaroid"
+        style="width: 270px"
+        alt="" />
+
       <img
         src="assets/image/ch1/DSC06420-5.jpg"
-        class="img-polaroid span3"
-        alt=""
-        data-aos="zoom-in-up" />
-      &nbsp;
+        class="img-polaroid"
+        style="width: 270px"
+        alt="" />
+
       <img
         src="assets/image/ch1/A_108871.jpg"
-        class="img-polaroid span3"
-        alt=""
-        data-aos="zoom-in-up" />
+        class="img-polaroid"
+        style="width: 270px"
+        alt="" />
+
+      <img
+        src="assets/image/ch1/A_104105.jpg"
+        class="img-polaroid"
+        style="width: 270px"
+        alt="" />
     </div>
+    <!-- END Intro -->
     <div class="d-flex pt-5 align-items-center justify-content-center text-center">
       <a
         role="button"
         href="aboutPPC.html"
         class="toleft"
         style="text-decoration: none">
-        <i class="icon-chevron-left"> &nbsp;回上一頁</i>
+        <i class="icon-chevron-left"> &nbsp;回第一章</i>
+      </a>
+      <a
+        role="button"
+        href="aboutPPC_page2.html"
+        class="toleft"
+        style="text-decoration: none"
+        >&nbsp;下一節
+        <i class="icon-chevron-right"> </i>
       </a>
     </div>
 
@@ -243,10 +302,6 @@
       crossorigin></script>
 
     <!-- Load our React component. -->
-
-    <script src="js/bootstrap.js"></script>
-    <!-------------------- Script ------------------>
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/aos.js"></script>
     <script>
       AOS.init({
@@ -274,11 +329,19 @@
         console.log(scrollpos);
       });
     </script>
+    <!-- Loading Anitmation script -->
+    <script>
+      window.addEventListener("load", function () {
+        var loadingScreen = document.getElementById("loading");
+        loadingScreen.style.display = "none";
+      });
+    </script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
     <script src="js/twitter-bootstrap-hover-dropdown.js"></script>
     <script src="js/common.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jsonParse.js"></script>
     <script src="navbar.js"></script>
     <script src="footer.js"></script>
   </body>
