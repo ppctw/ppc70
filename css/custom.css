@@ -586,11 +586,11 @@ ul.social-links li a.skype {
 ul.social-links li a.rss {
 	background:url(../img/socialpack/rss.png) 50% 50% no-repeat
 }
-ul.social-links li a.linkedin {
-	background:url(../img/socialpack/linkedin.png) 50% 50% no-repeat
+ul.social-links li a.youtube {
+	background:url(../img/socialpack/youtube.png) 50% 50% no-repeat
 }
-ul.social-links li a.pinterest {
-	background:url(../img/socialpack/pinterest.png) 50% 50% no-repeat
+ul.social-links li a.instagram {
+	background:url(../img/socialpack/instagram.png) 50% 50% no-repeat
 }
 ul.social-links>li.facebook-link:hover {
 	float:left;
@@ -646,19 +646,19 @@ ul.social-links>li.rss-link:hover {
 	height:32px;
 	background:#ff8500;
 }
-ul.social-links>li.linkedin-link:hover {
+ul.social-links>li.youtube-link:hover {
 	float:left;
 	font-size:12px;
 	width:32px;
 	height:32px;
-	background:#007fc5;
+	background:#FF0000;
 }
-ul.social-links>li.pinterest-link:hover {
+ul.social-links>li.instagram-link:hover {
 	float:left;
 	font-size:12px;
 	width:32px;
 	height:32px;
-	background: #e63037;
+	background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 }
 /* ============ SKILLS ============= */
 #skill {
