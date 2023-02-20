@@ -31,13 +31,13 @@ var ColumnThree_component = function (_React$Component) {
         { href: "" + this.props.linkUrl },
         React.createElement(
           "div",
-          { "class": "column-4 column-md-6 column-xs-12 hide-sm hide-md box-tab" },
+          { "class": "column-4 column-md-6 column-xs-12   box-tab" },
           React.createElement(
             "div",
             { "class": "effect effect-ten", "data-aos": "zoom-in-left" },
             React.createElement("img", {
               src: "" + this.props.imgUrl,
-              "class": "img-fluid" }),
+              "class": "img-fluid " }),
             React.createElement(
               "div",
               { "class": "tab-text" },
@@ -48,7 +48,7 @@ var ColumnThree_component = function (_React$Component) {
               ),
               React.createElement(
                 "p",
-                { "class": "pt-5" },
+                { "class": "pt-3 " },
                 this.props.description
               )
             )

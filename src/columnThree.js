@@ -12,14 +12,14 @@ class ColumnThree_component extends React.Component {
  
     return (
       <a href={`${this.props.linkUrl}`}> 
-        <div  class="column-4 column-md-6 column-xs-12 hide-sm hide-md box-tab">        
+        <div  class="column-4 column-md-6 column-xs-12   box-tab">        
           <div class="effect effect-ten" data-aos="zoom-in-left">
             <img         
               src={`${this.props.imgUrl}`} 
-              class="img-fluid" />
+              class="img-fluid " />
             <div class="tab-text">
               <h2>{this.props.title}</h2>
-              <p class="pt-5">{this.props.description}</p>           
+              <p class="pt-3 ">{this.props.description}</p>           
             </div>
           </div>       
         </div>

@@ -29,7 +29,7 @@ var ColumnFull_component = function (_React$Component) {
 
       return React.createElement(
         "div",
-        { "class": "column-3 hide-xs box-tab hide-sm hide-md" },
+        { "class": "column-3  box-tab  " },
         React.createElement(
           "div",
           { "class": "effect grid-width3 effect-seven" },

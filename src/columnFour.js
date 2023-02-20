@@ -19,7 +19,7 @@ class ColumnFour_component extends React.Component {
  
     return (
    
-      <div class="column-3 hide-xs box-tab hide-sm hide-mdbox-tab">
+      <div  class="column-4 column-md-6 column-xs-12   box-tab">     
         <div class="effect effect-seven" data-aos="zoom-in-left">
           <img         
             src={`${this.props.imgUrl}`} 

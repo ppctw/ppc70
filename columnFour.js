@@ -36,7 +36,7 @@ var ColumnFour_component = function (_React$Component) {
 
       return React.createElement(
         'div',
-        { 'class': 'column-3 hide-xs box-tab hide-sm hide-mdbox-tab' },
+        { 'class': 'column-4 column-md-6 column-xs-12   box-tab' },
         React.createElement(
           'div',
           { 'class': 'effect effect-seven', 'data-aos': 'zoom-in-left' },

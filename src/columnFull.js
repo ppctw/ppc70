@@ -13,7 +13,7 @@ class ColumnFull_component extends React.Component {
   render( ) {
  
     return (
-      <div class="column-3 hide-xs box-tab hide-sm hide-md">
+      <div class="column-3  box-tab  ">
       <div class="effect grid-width3 effect-seven">
           <img         
             src={`${this.props.imgUrl}`} 
