@@ -56,7 +56,31 @@
 
     <!-- Jquery - The rest of the scripts at the bottom-->
     <script src="js/jquery-1.9.0.min.js"></script>
-    <style></style>
+    <style>
+      #loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        z-index: 9999;
+      }
+      #loading::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      #loading img {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
   </head>
   <body>
     <!-- Header
@@ -67,6 +91,12 @@
       </div>
     </div>
     <!-- End Header -->
+    <!-- Loading Animation -->
+    <div id="loading">
+      <img
+        src="img/loading.svg"
+        alt="Loading..." />
+    </div>
     <!-- Content
 ================================================== -->
     <div class="container">
@@ -390,7 +420,13 @@
       //   });
       // });
     </script>
-
+    <!-- Loading Anitmation script -->
+    <script>
+      window.addEventListener("load", function () {
+        var loadingScreen = document.getElementById("loading");
+        loadingScreen.style.display = "none";
+      });
+    </script>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/bootstrap.js"></script>
     <script src="js/twitter-bootstrap-hover-dropdown.js"></script>
