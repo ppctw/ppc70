@@ -101,7 +101,7 @@ var Navbar_component = function (_React$Component) {
               React.createElement(
                 "a",
                 { href: "song.html" },
-                "\u8A69\u6B4C\u5275\u4F5C"
+                "\u76F4\u5230\u5730\u6975-\u6B4C\u66F2\uFF2D\uFF36"
               )
             ),
             React.createElement(
