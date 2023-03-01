@@ -82,7 +82,7 @@ var Navbar_component = function (_React$Component) {
               null,
               React.createElement(
                 "a",
-                { href: "index.html" },
+                { href: "agape.html" },
                 "\u611B\u5496\u5561Agape"
               )
             ),
@@ -100,8 +100,8 @@ var Navbar_component = function (_React$Component) {
               null,
               React.createElement(
                 "a",
-                { href: "index.html" },
-                "\u76F4\u5230\u5730\u6975\uFF0D\u6B4C\u66F2MV"
+                { href: "song.html" },
+                "\u8A69\u6B4C\u5275\u4F5C"
               )
             ),
             React.createElement(

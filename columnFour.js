@@ -35,26 +35,30 @@ var ColumnFour_component = function (_React$Component) {
     value: function render() {
 
       return React.createElement(
-        'div',
-        { 'class': 'column-4 column-md-6 column-xs-12   box-tab' },
+        'a',
+        { href: '' + this.props.linkUrl },
         React.createElement(
           'div',
-          { 'class': 'effect effect-seven', 'data-aos': 'zoom-in-left' },
-          React.createElement('img', {
-            src: '' + this.props.imgUrl,
-            'class': 'img-fluid' }),
+          { 'class': 'column-4 column-md-6 column-xs-12   box-tab' },
           React.createElement(
             'div',
-            { 'class': 'tab-text' },
+            { 'class': 'effect effect-seven', 'data-aos': 'zoom-in-left' },
+            React.createElement('img', {
+              src: '' + this.props.imgUrl,
+              'class': 'img-fluid' }),
             React.createElement(
-              'h2',
-              null,
-              this.props.title
-            ),
-            React.createElement(
-              'p',
-              null,
-              this.props.description
+              'div',
+              { 'class': 'tab-text' },
+              React.createElement(
+                'h2',
+                null,
+                this.props.title
+              ),
+              React.createElement(
+                'p',
+                null,
+                this.props.description
+              )
             )
           )
         )
@@ -71,9 +75,10 @@ document.querySelectorAll('.columnFour_component').forEach(function (domContaine
   var title = domContainer.dataset.title;
   var description = domContainer.dataset.description;
   var imgUrl = domContainer.dataset.imgurl;
+  var linkUrl = domContainer.dataset.linkurl;
   // console.log("domContainer",domContainer.dataset)
   var root = ReactDOM.createRoot(domContainer);
-  root.render(e(ColumnFour_component, { title: title, description: description, imgUrl: imgUrl }));
+  root.render(e(ColumnFour_component, { title: title, description: description, imgUrl: imgUrl, linkUrl: linkUrl }));
 });
 
 {/* const root = ReactDOM.createRoot(document.getElementById('columnThree_component'));

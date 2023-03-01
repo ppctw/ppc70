@@ -18,7 +18,7 @@ class ColumnFour_component extends React.Component {
   render( ) {
  
     return (
-   
+      <a href={`${this.props.linkUrl}`}> 
       <div  class="column-4 column-md-6 column-xs-12   box-tab">     
         <div class="effect effect-seven" data-aos="zoom-in-left">
           <img         
@@ -30,6 +30,7 @@ class ColumnFour_component extends React.Component {
           </div>
         </div>       
       </div>
+      </a>
       );
   }
 }
@@ -42,9 +43,10 @@ class ColumnFour_component extends React.Component {
     const title =  domContainer.dataset.title;
     const description = domContainer.dataset.description;
     const imgUrl = domContainer.dataset.imgurl;
+    const linkUrl = domContainer.dataset.linkurl;
     // console.log("domContainer",domContainer.dataset)
     const root = ReactDOM.createRoot(domContainer);
-    root.render( e(ColumnFour_component, { title: title,description:description,imgUrl:imgUrl})); 
+    root.render( e(ColumnFour_component, { title: title,description:description,imgUrl:imgUrl,linkUrl:linkUrl})); 
   });
  
  
