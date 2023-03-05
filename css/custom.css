@@ -4,6 +4,7 @@ body {
 	background:#f6f6f6;
 	font:17px/27px 'OpenSansLight',Arial,sans-serif;
 	color:#555;
+	font-family: 'Noto Sans TC',sans-serif !important;
 }
 i {
 	font-family:OpenSansLightItalic;
