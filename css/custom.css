@@ -575,8 +575,8 @@ ul.social-links li a.twitter {
 ul.social-links li a.google {
 	background:url(../img/socialpack/google.png) 50% 50% no-repeat
 }
-ul.social-links li a.dribbble {
-	background:url(../img/socialpack/dribbble.png) 50% 50% no-repeat
+ul.social-links li a.line {
+	background:url(../img/socialpack/line.png) 50% 50% no-repeat
 }
 ul.social-links li a.vimeo {
 	background:url(../img/socialpack/vimeo.png) 50% 50% no-repeat
@@ -584,8 +584,8 @@ ul.social-links li a.vimeo {
 ul.social-links li a.skype {
 	background:url(../img/socialpack/skype.png) 50% 50% no-repeat
 }
-ul.social-links li a.rss {
-	background:url(../img/socialpack/rss.png) 50% 50% no-repeat
+ul.social-links li a.website {
+	background:url(../img/socialpack/website.png) 50% 50% no-repeat
 }
 ul.social-links li a.youtube {
 	background:url(../img/socialpack/youtube.png) 50% 50% no-repeat
@@ -614,12 +614,12 @@ ul.social-links>li.google-link:hover {
 	height:32px;
 	background:#f54a35;
 }
-ul.social-links>li.dribbble-link:hover {
+ul.social-links>li.line-link:hover {
 	float:left;
 	font-size:12px;
 	width:32px;
 	height:32px;
-	background:#fd83af;
+	background:#06c755;
 }
 ul.social-links>li.vimeo-link:hover {
 	float:left;
@@ -640,12 +640,12 @@ ul.social-links li a {
 	height:32px;
 	display:block;
 }
-ul.social-links>li.rss-link:hover {
+ul.social-links>li.website-link:hover {
 	float:left;
 	font-size:12px;
 	width:32px;
 	height:32px;
-	background:#ff8500;
+	background:#be6bf4;
 }
 ul.social-links>li.youtube-link:hover {
 	float:left;

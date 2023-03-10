@@ -64,7 +64,7 @@ var Footer_c = function (_React$Component) {
                   React.createElement(
                     "a",
                     {
-                      href: "#",
+                      href: "https://www.facebook.com/PPC.EKKLESIA/?locale=zh_TW",
                       "class": "facebook has-tip",
                       target: "_blank",
                       title: "Join us on Facebook"
@@ -74,44 +74,58 @@ var Footer_c = function (_React$Component) {
                 ),
                 React.createElement(
                   "li",
-                  { "class": "google-link" },
+                  { "class": "youtube-link" },
                   React.createElement(
                     "a",
                     {
-                      href: "#",
-                      "class": "google has-tip",
-                      title: "Google +",
+                      href: "https://www.youtube.com/@PingtungPeaceChurch",
+                      "class": "youtube has-tip",
+                      title: "youtube",
                       target: "_blank"
                     },
-                    "Google"
+                    "youtube"
                   )
                 ),
                 React.createElement(
                   "li",
-                  { "class": "facebook-link" },
+                  { "class": "instagram-link" },
                   React.createElement(
                     "a",
                     {
-                      href: "#",
-                      "class": "facebook has-tip",
-                      target: "_blank",
-                      title: "Join us on Facebook"
+                      href: "https://www.instagram.com/ppcofficial/",
+                      "class": "instagram has-tip",
+                      title: "instagram",
+                      target: "_blank"
                     },
-                    "Facebook"
+                    "instagram"
                   )
                 ),
                 React.createElement(
                   "li",
-                  { "class": "facebook-link" },
+                  { "class": "website-link" },
                   React.createElement(
                     "a",
                     {
-                      href: "#",
-                      "class": "facebook has-tip",
-                      target: "_blank",
-                      title: "Join us on Facebook"
+                      href: "https://www.ppctw.org/",
+                      "class": "website has-tip",
+                      title: "website",
+                      target: "_blank"
                     },
-                    "Facebook"
+                    "webiste"
+                  )
+                ),
+                React.createElement(
+                  "li",
+                  { "class": "line-link" },
+                  React.createElement(
+                    "a",
+                    {
+                      href: "https://www.ppctw.org/",
+                      "class": "line has-tip",
+                      title: "line",
+                      target: "_blank"
+                    },
+                    "webiste"
                   )
                 )
               ),
