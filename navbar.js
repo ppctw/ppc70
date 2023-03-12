@@ -91,17 +91,8 @@ var Navbar_component = function (_React$Component) {
               null,
               React.createElement(
                 "a",
-                { href: "index.html" },
-                "\u7279\u5225\u5831\u5C0E"
-              )
-            ),
-            React.createElement(
-              "li",
-              null,
-              React.createElement(
-                "a",
                 { href: "song.html" },
-                "\u76F4\u5230\u5730\u6975-\u6B4C\u66F2\uFF2D\uFF36"
+                "\u8A69\u6B4C\u5275\u4F5C"
               )
             ),
             React.createElement(
