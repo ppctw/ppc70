@@ -89,7 +89,7 @@
         background-color: white;
         color: black;
         padding: 5px;
-        width: 50%;
+        width: 80%;
         text-align: center;
       }
       .title-h1 {
@@ -146,6 +146,59 @@
         text-align: center;
       }
 
+      button {
+        margin: 20px;
+      }
+      .custom-btn {
+        width: 10rem;
+        height: 3rem;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+        outline: none;
+      }
+      /* 9 */
+      .btn-9 {
+        border: none;
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
+      .btn-9:after {
+        position: absolute;
+        content: " ";
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1fd1f9;
+        background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+        transition: all 0.3s ease;
+      }
+      .btn-9:hover {
+        background: transparent;
+        box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+          inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+          inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+        color: #fff;
+      }
+      .btn-9:hover:after {
+        -webkit-transform: scale(2) rotate(180deg);
+        transform: scale(2) rotate(180deg);
+        box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+          inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+          inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+      }
+
       body {
         background-image: url("assets/design/img5.png");
         background-size: cover;
@@ -188,23 +241,10 @@
 	  ================================================== -->
       <div class="align-items-center justify-content-center text-center">
         <div class="col-12">
-          <h1 class="display-huge mt-3 mb-5 lh-1 tab-container effectTab-header">教會團隊</h1>
+          <h1 class="display-huge mt-3 lh-1 tab-container effectTab-header">事工團隊</h1>
         </div>
-        <div
-          class="col-12"
-          data-aos="zoom-in-up">
-          <h2 class="lead text-secondary text-white text-left">
-            和平教會建造至今，會友人數已突破1,000人，為了幫助會友在信仰上不斷追求與成長，信心穩固，屬靈成熟，
-            我們建立了牧養團隊與事工團隊，全職團隊有主任牧師夫婦、1位教育牧師、5位傳道，帶職同工團隊則有3位區長，54位小組長。
-          </h2>
-          <br />
-          <h2 class="lead text-secondary text-white text-left">
-            按照不同年齡層與屬性，我們也分為五大教會——兒童教會、青少年教會、青年教會、職青教會、成人教會，並有專責的傳道人來牧養，各教會又按照不同的需要進行分區與分組，設立區長與組長。
-          </h2>
-        </div>
-
         <p
-          class="lead border-top pt-5 mt-5"
+          class="lead border-top pt-5"
           data-aos="fade-up"></p>
       </div>
     </div>
@@ -229,8 +269,7 @@
         </p>
         <p class="titleTwo-label">職責</p>
         <p>
-          每堂崇拜前，我們會提早集合，一同禱告，確認服事崗位；在聚會開始前引導會眾排隊入場，找到合適的座位，歡迎並派發PPC
-          NEWS給會眾；在聚會中需要隨時留意環境與各樣需要(座位、空調、秩序…等)，並要進行奉獻的收取與數點、
+          每堂崇拜前，我們會提早集合，一同禱告，確認服事崗位；在聚會開始前引導會眾排隊入場，找到合適的座位，歡迎並派發信息講義與奉獻袋給會眾；在聚會中需要隨時留意環境與各樣需要(座位、空調、秩序…等)，並要進行奉獻的收取與數點、
           聚會出席人數的數點；在牧師有進行權能事奉時，進行扶人的服事。
         </p>
       </div>
@@ -273,7 +312,7 @@
           class="img-fluid" />
       </div>
       <div class="span6">
-        <h1 style="font-weight: bold">VISUAL COMMUNICATION</h1>
+        <h1 style="font-weight: bold">GOD'S WORK</h1>
         <h4 class="white-label">權能事奉團隊</h4>
         <p class="titleOne-label">團隊異象</p>
         <p>
@@ -321,7 +360,7 @@
           class="img-fluid" />
       </div>
       <div class="span6">
-        <h1 style="font-weight: bold">TEAM</h1>
+        <h1 style="font-weight: bold">VISUAL COMMUNICATION</h1>
         <h4 class="white-label">視覺傳達團隊</h4>
         <p class="titleOne-label">團隊異象</p>
         <p>
@@ -330,7 +369,7 @@
         <p class="titleTwo-label">職責</p>
         <p>
           負責教會的平面攝影、平面設計、PPT、動態錄影、剪輯。我們會製作各樣要呈現的內容，如：PPC
-          TV、投影片、視覺設計、回應影片剪輯等。聚會中，我們會在每個流程配搭PPT、影像轉播，以及拍攝記錄。聚會後，我們仔細處理每一份資料與影像，做好分類歸檔，讓媒體資源妥善應用。
+          TV、投影片、視覺設計、回顧影片剪輯等。聚會中，我們會在每個流程配搭PPT、影像轉播，以及拍攝記錄。聚會後，我們仔細處理每一份資料與影像，做好分類歸檔，讓媒體資源妥善應用。
         </p>
       </div>
     </div>
@@ -352,7 +391,7 @@
         <p>
           1. 看重人與神的關係，帶領人們朝見、親近、愛慕神。 <br />
           2. 看重真理教導，裝備敬拜生命，成為「心靈與誠實」敬拜者。 <br />
-          3.看重音樂技巧提升、屬靈建造層次突破。 <br />
+          3. 看重音樂技巧提升、屬靈建造層次突破。 <br />
           4. 興起根基穩固、充滿信心、滿有恩膏、帶下神同在的讚美敬拜主領。 <br />5.
           在每場聚會中，與牧者們有良好配搭，順服聖靈運行，建立美好的屬靈氛圍。<br />6.
           在神的愛中彼此遮蓋，彼此幫補，彼此相愛，以基督耶穌的心為心，帶下聲合為一、彼此成全、滿有果效的敬拜服事。
@@ -383,9 +422,14 @@
         </p>
         <p class="titleTwo-label">職責</p>
         <p>
-          服事前：於一個月前開會討論本次接待對象，安排工作崗位，並訂出服事內容時間表，也會實際彩排接送路線，確保行程順利。
-          服事中：接待團隊會隨時注意講員貴賓的動向與需要，即時連結回報，並保持極大的彈性，以做出各種應變與調整。
-          服事後：一週內進行聚集與檢討，評估與紀錄此次接待服事的情形，為下一次的接待服事做準備。
+          每週接待與服事教會牧者，於聚會前後預備愛咖啡飲品，如遇牧師外出服事，協助安排與確認交通。<br /><br />
+          當有外請講員來和平教會，或遇營會/特會需接待眾教會牧者時：
+          <li style="padding-top: 0.5rem; padding-bottom: 0.5rem">服事前：</li>
+          於一個月前開會討論本次接待對象，安排工作崗位，並訂出服事內容時間表，也會實際彩排接送路線，確保行程順利。
+          <li style="padding-top: 0.5rem; padding-bottom: 0.5rem">服事中：</li>
+          接待團隊會隨時注意講員貴賓的動向與需要，即時連結回報，並保持極大的彈性，以做出各種應變與調整。
+          <li style="padding-top: 0.5rem">服事後：</li>
+          一週內進行聚集與檢討，評估與紀錄此次接待服事的情形，為下一次的接待服事做準備。
         </p>
       </div>
     </div>
@@ -425,7 +469,7 @@
           class="img-fluid" />
       </div>
       <div class="span6">
-        <h1 style="font-weight: bold">TEAM</h1>
+        <h1 style="font-weight: bold">PPC TV</h1>
         <h4 class="white-label">PPC TV團隊</h4>
         <p class="titleOne-label">團隊異象</p>
         <p>
@@ -449,7 +493,7 @@
           class="img-fluid" />
       </div>
       <div class="span6">
-        <h1 style="font-weight: bold">TEAM</h1>
+        <h1 style="font-weight: bold">PPC NEWS</h1>
         <h4 class="white-label">PPC NEWS</h4>
         <p class="titleOne-label">團隊異象</p>
         <p>
@@ -568,11 +612,16 @@
     <div
       class="row d-flex align-items-center justify-content-center"
       style="padding-bottom: 2rem">
-      <a
+      <button
+        class="custom-btn btn-9"
+        onclick="location.href='aboutPPC_page3.html'">
+        < 牧養團隊
+      </button>
+      <!-- <a
         class="lable-title"
         href="aboutPPC_page3.html"
         >< 牧養團隊
-      </a>
+      </a> -->
     </div>
     <!-- END back -->
     <div class="d-flex pt-5 align-items-center justify-content-center text-center">

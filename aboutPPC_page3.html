@@ -89,7 +89,7 @@
         background-color: white;
         color: black;
         padding: 5px;
-        width: 50%;
+        width: 80%;
         text-align: center;
       }
       .title-h1 {
@@ -201,6 +201,59 @@
         letter-spacing: 1px;
       }
 
+      button {
+        margin: 20px;
+      }
+      .custom-btn {
+        width: 10rem;
+        height: 3rem;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+        outline: none;
+      }
+      /* 9 */
+      .btn-9 {
+        border: none;
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
+      .btn-9:after {
+        position: absolute;
+        content: " ";
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1fd1f9;
+        background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+        transition: all 0.3s ease;
+      }
+      .btn-9:hover {
+        background: transparent;
+        box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+          inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+          inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+        color: #fff;
+      }
+      .btn-9:hover:after {
+        -webkit-transform: scale(2) rotate(180deg);
+        transform: scale(2) rotate(180deg);
+        box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+          inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+          inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+      }
+
       body {
         background-image: url("assets/design/img5.png");
         background-size: cover;
@@ -243,7 +296,7 @@
 	  ================================================== -->
       <div class="align-items-center justify-content-center text-center">
         <div class="col-12">
-          <h1 class="display-huge mt-3 mb-5 lh-1 tab-container effectTab-header">教會團隊</h1>
+          <h1 class="display-huge mt-3 lh-1 tab-container effectTab-header">教會團隊</h1>
         </div>
         <div
           class="col-12"
@@ -298,7 +351,7 @@
       <div class="span6">
         <h4>主任牧師</h4>
         <h1 class="title-h1">SENIOR</h1>
-        <h1 class="title-h1">POSTER</h1>
+        <h1 class="title-h1">PASTOR</h1>
         <h1 class="title-h1-aqua">FAMILY</h1>
         <h4 class="white-label">葛兆昕牧師一家</h4>
         <p class="pt-3">
@@ -697,14 +750,20 @@
       </div>
     </div>
     <!--  Intro -->
+
     <div
       class="row d-flex align-items-center justify-content-center"
       style="padding-bottom: 2rem">
-      <a
+      <button
+        class="custom-btn btn-9"
+        onclick="location.href='aboutPPC_page4.html'">
+        > 事工團隊
+      </button>
+      <!-- <a
         class="lable-title"
         href="aboutPPC_page4.html"
         >事工團隊 ></a
-      >
+      > -->
     </div>
     <!-- END Row 11 -->
     <div class="d-flex pt-5 align-items-center justify-content-center text-center">

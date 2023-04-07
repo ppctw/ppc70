@@ -158,7 +158,8 @@
             教會也預錄讚美敬拜、牧者信息傳講影片、詩歌回應MV、創作詩歌《為祢站立》，
             連續多個星期製作《VICTOR神國度的得勝者——國家祈禱會》，於YouTube、Facebook進行直播。
             <div
-              style="position: relative; padding-bottom: 56.25%; padding-top: 2rem"
+              class="row-fluid"
+              style="padding-top: 2rem"
               data-aos="fade-up">
               <video
                 data-aos="fade-up"
@@ -170,10 +171,24 @@
                   type="video/mp4" />
               </video>
             </div>
-            <br /><br />
-            當時，在實體聚會不能超過5人的限制下，和平教會不受限制的以線上國家祈禱會的方式，
-            帶領弟兄姊妹一起為國家禱告。大家以「小組」為單位，透過視訊軟體一同參與每週的禱告會直播。
-            在禱告會結束後，小組仍會持續地發動禱告，並在社群平台進行策展，把禱告會的影響力不斷的擴散與分享出去。
+            <!-- <div
+              style="position: relative; padding-bottom: 56.25%; padding-top: 2rem"
+              data-aos="fade-up">
+              <video
+                data-aos="fade-up"
+                class="span12"
+                controls
+                poster="assets/image/videoPic/standForYou.png">
+                <source
+                  src="assets/video/PPC_Worship_5.mp4"
+                  type="video/mp4" />
+              </video>
+            </div> -->
+            <div class="pt-3">
+              當時，在實體聚會不能超過5人的限制下，和平教會不受限制的以線上國家祈禱會的方式，
+              帶領弟兄姊妹一起為國家禱告。大家以「小組」為單位，透過視訊軟體一同參與每週的禱告會直播。
+              在禱告會結束後，小組仍會持續地發動禱告，並在社群平台進行策展，把禱告會的影響力不斷的擴散與分享出去。
+            </div>
           </div>
           <div
             class="row-fluid"
@@ -248,32 +263,23 @@
         <!--  -->
       </div>
     </div>
-
-    <div class="container pt-5">
+    <!--First Intro 
+	  ================================================== -->
+    <div class="container">
       <div
-        style="position: relative; padding-bottom: 56.25%; padding-top: 2rem"
+        class="row-fluid"
+        style="padding-top: 2rem"
         data-aos="fade-up">
         <video
           data-aos="fade-up"
-          class="span12"
+          class="span12 align-items-start justify-content-start text-center"
           controls
           poster="assets/image/videoPic/img_6.png">
           <source
-            src="assets/video/PPC_worship_5.mp4"
+            src="assets/video/PPC_Worship_6.mp4"
             type="video/mp4" />
         </video>
       </div>
-      <!-- 定义一个空的容器元素，用于后续插入视频或嵌入式网页 -->
-      <div id="video-container"></div>
-      <!-- <div style="width: 100%; height: 0; position: relative; padding-bottom: 56.25%">
-        <iframe
-          src="https://www.youtube.com/embed/T_BD5KgEslg"
-          title="YouTube video player"
-          frameborder="0"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div> -->
       <div
         style="padding-top: 2rem"
         class="row-fluid"
@@ -443,32 +449,6 @@
         loadingScreen.style.display = "none";
       });
     </script>
-    <script>
-      // 创建一个新的 video 元素，检查是否支持 HTML5 video 标签，如果不支持则 fallback 到 iframe
-      const video = document.createElement("video");
-      if (video.canPlayType) {
-        // 如果支持 HTML5 video，则添加 video 标签到容器中
-        const source = document.createElement("source");
-        source.src = "assets/video/PPC_worship_5.mp4";
-        source.type = "video/mp4";
-        video.appendChild(source);
-        video.controls = true; // 显示视频控制条
-        document.getElementById("video-container").appendChild(video);
-      } else {
-        // 如果不支持 HTML5 video，则 fallback 到 iframe
-        const iframe = document.createElement("iframe");
-
-        iframe.src = "https://www.youtube.com/embed/jwX4IGwFJQk";
-        iframe.title = "YouTube video player";
-        iframe.frameborder = "0";
-        iframe.style.cssText = "position: absolute; top: 0; left: 0; width: 100%; height: 100%";
-        iframe.allow =
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.allowfullscreen = true; // 允许全屏播放
-        document.getElementById("video-container").appendChild(iframe);
-      }
-    </script>
-
     <script src="js/bootstrap.js"></script>
     <script src="js/twitter-bootstrap-hover-dropdown.js"></script>
     <script src="js/common.js"></script>
