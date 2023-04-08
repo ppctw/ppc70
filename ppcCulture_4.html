@@ -45,14 +45,6 @@
     <link
       rel="stylesheet"
       href="css/effect.css" />
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="css/ie.css" />
-    <![endif]-->
     <link
       rel="stylesheet"
       href="css/theme.min.css" />
@@ -256,10 +248,6 @@
                           Quake」，青年人能夠震撼這世界，青年人就是這個世界的未來
                         </p>
                       </div>
-                      <!-- Video
-			================================================== -->
-
-                      <!-- END Video -->
                     </div>
                   </div>
                 </div>
@@ -289,15 +277,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="image-column pt-5">
-                  <div class="inner-column">
-                    <div class="image">
-                      <img
-                        src="assets/image/ch3/yq/YQ3.jpeg"
-                        alt="" />
-                    </div>
-                  </div>
-                </div> -->
               </section>
             </div>
           </div>
@@ -405,6 +384,21 @@
         var loadingScreen = document.getElementById("loading");
         loadingScreen.style.display = "none";
       });
+    </script>
+    <!-- 關閉下載 -->
+    <script>
+      function disableDownloadButton() {
+        const mediaTags = document.querySelectorAll("audio, video");
+        mediaTags.forEach((mediaTag) => {
+          const controls = mediaTag.controls;
+          if (controls) {
+            mediaTag.controls = false;
+            mediaTag.addEventListener("contextmenu", (e) => {
+              e.preventDefault();
+            });
+          }
+        });
+      }
     </script>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/bootstrap.js"></script>

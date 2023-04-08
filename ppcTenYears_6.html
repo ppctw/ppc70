@@ -45,14 +45,6 @@
     <link
       rel="stylesheet"
       href="css/effect.css" />
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="css/ie.css" />
-    <![endif]-->
     <link
       rel="stylesheet"
       href="css/theme.min.css" />
@@ -309,17 +301,6 @@
               type="video/mp4" />
           </video>
         </div>
-        <!-- <div style="width: 100%; height: 0; position: relative; padding-bottom: 56.25%">
-          <iframe
-            src="https://www.youtube.com/embed/jH3JO-FT5o4"
-            title="YouTube video player"
-            frameborder="0"
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div> -->
-        <!-- END Video -->
-        <!--  -->
         <!-- Row3-------------- -->
         <div class="col-12 pt-5">
           <div
@@ -544,6 +525,21 @@
 
         // console.log(scrollpos);
       });
+    </script>
+    <!-- 關閉下載 -->
+    <script>
+      function disableDownloadButton() {
+        const mediaTags = document.querySelectorAll("audio, video");
+        mediaTags.forEach((mediaTag) => {
+          const controls = mediaTag.controls;
+          if (controls) {
+            mediaTag.controls = false;
+            mediaTag.addEventListener("contextmenu", (e) => {
+              e.preventDefault();
+            });
+          }
+        });
+      }
     </script>
     <!-- Loading Anitmation script -->
     <script>

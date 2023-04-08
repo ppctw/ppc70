@@ -84,6 +84,3 @@ document.querySelectorAll('.gridLeftRow_component').forEach(function (domContain
   var root = ReactDOM.createRoot(domContainer);
   root.render(e(GridLeftRow_component, { title: title, description: description, imgUrl: imgUrl, imgCss: imgCss }));
 });
-
-{/* const root = ReactDOM.createRoot(document.getElementById('columnThree_component'));
-  root.render( e(ColumnThree_component, { nameAuth: "123" }));   */}

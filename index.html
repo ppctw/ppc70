@@ -239,11 +239,9 @@
         </button>
         <!-- END Video -->
       </div>
-
       <!-- END Intro -->
       <!--First row  
 	  ================================================== -->
-
       <!-- END row -->
     </div>
     <!-- End Content -->
@@ -297,7 +295,21 @@
         loadingScreen.style.display = "none";
       });
     </script>
-
+    <!-- 關閉下載 -->
+    <script>
+      function disableDownloadButton() {
+        const mediaTags = document.querySelectorAll("audio, video");
+        mediaTags.forEach((mediaTag) => {
+          const controls = mediaTag.controls;
+          if (controls) {
+            mediaTag.controls = false;
+            mediaTag.addEventListener("contextmenu", (e) => {
+              e.preventDefault();
+            });
+          }
+        });
+      }
+    </script>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/bootstrap.js"></script>
     <script src="js/twitter-bootstrap-hover-dropdown.js"></script>

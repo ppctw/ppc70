@@ -80,6 +80,3 @@ document.querySelectorAll('.columnFour_component').forEach(function (domContaine
   var root = ReactDOM.createRoot(domContainer);
   root.render(e(ColumnFour_component, { title: title, description: description, imgUrl: imgUrl, linkUrl: linkUrl }));
 });
-
-{/* const root = ReactDOM.createRoot(document.getElementById('columnThree_component'));
-  root.render( e(ColumnThree_component, { nameAuth: "123" }));   */}

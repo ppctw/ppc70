@@ -83,6 +83,3 @@ document.querySelectorAll('.gridRight_component').forEach(function (domContainer
   var root = ReactDOM.createRoot(domContainer);
   root.render(e(GridRight_component, { title: title, description: description, imgUrl: imgUrl }));
 });
-
-{/* const root = ReactDOM.createRoot(document.getElementById('columnThree_component'));
-  root.render( e(ColumnThree_component, { nameAuth: "123" }));   */}

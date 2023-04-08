@@ -42,7 +42,3 @@ class Team_component extends React.Component {
   });
  
  
-  {/* const root = ReactDOM.createRoot(document.getElementById('columnThree_component'));
- 
-root.render( e(ColumnThree_component, { nameAuth: "123" }));   */}
-

@@ -45,14 +45,6 @@
     <link
       rel="stylesheet"
       href="css/effect.css" />
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="css/ie.css" />
-    <![endif]-->
     <link
       rel="stylesheet"
       href="css/theme.min.css" />
@@ -313,14 +305,18 @@
       </div>
     </div>
     <div class="container pt-5">
-      <video
-        class="span12"
-        controls
-        poster="assets/image/videoPic/img_8.png">
-        <source
-          src="assets/video/news_data.mp4"
-          type="video/mp4" />
-      </video>
+      <div
+        class="row-fluid"
+        style="padding-left: 1rem">
+        <video
+          class="span12"
+          controls
+          poster="assets/image/videoPic/img_8.png">
+          <source
+            src="assets/video/news_data.mp4"
+            type="video/mp4" />
+        </video>
+      </div>
     </div>
     <!-- END Intro -->
     <div class="d-flex pt-5 align-items-center justify-content-center text-center">
@@ -391,6 +387,21 @@
         var loadingScreen = document.getElementById("loading");
         loadingScreen.style.display = "none";
       });
+    </script>
+    <!-- 關閉下載 -->
+    <script>
+      function disableDownloadButton() {
+        const mediaTags = document.querySelectorAll("audio, video");
+        mediaTags.forEach((mediaTag) => {
+          const controls = mediaTag.controls;
+          if (controls) {
+            mediaTag.controls = false;
+            mediaTag.addEventListener("contextmenu", (e) => {
+              e.preventDefault();
+            });
+          }
+        });
+      }
     </script>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/bootstrap.js"></script>

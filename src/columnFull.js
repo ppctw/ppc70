@@ -42,8 +42,5 @@ class ColumnFull_component extends React.Component {
     root.render( e(ColumnFull_component, { title: title,description:description,imgUrl:imgUrl,columnValue:columnValue})); 
   });
  
- 
-  {/* const root = ReactDOM.createRoot(document.getElementById('ColumnFull_component'));
- 
-root.render( e(ColumnFull_component, { nameAuth: "123" }));   */}
+
 

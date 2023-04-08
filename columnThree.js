@@ -72,6 +72,3 @@ document.querySelectorAll('.columnThree_component').forEach(function (domContain
   var root = ReactDOM.createRoot(domContainer);
   root.render(e(ColumnThree_component, { title: title, description: description, imgUrl: imgUrl, linkUrl: linkUrl }));
 });
-
-{/* const root = ReactDOM.createRoot(document.getElementById('columnThree_component'));
-  root.render( e(ColumnThree_component, { nameAuth: "123" }));   */}
