@@ -471,11 +471,11 @@
   .seofy_module_time_line_vertical:before {
     left: 45px;
   }
-  .seofy_module_time_line_vertical .time_line-date_wrap {
+  /* .seofy_module_time_line_vertical .time_line-date_wrap {
     margin-top: 12rem !important;
     margin-left: 35px !important;
     margin-right: 35px !important;
-  }
+  } */
   .seofy_module_time_line_vertical .time_line-date {
     padding: 0 !important;
     right: 100% !important;
@@ -488,7 +488,7 @@
     left: 0 !important;
     right: auto !important;
   }
-  .seofy_module_time_line_vertical .time_line-item {
+  /* .seofy_module_time_line_vertical .time_line-item {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
     -webkit-flex-direction: row !important;
@@ -546,5 +546,5 @@
     -ms-transform: translateX(5px) !important;
     -o-transform: translateX(5px) !important;
     transform: translateX(5px) !important;
-  }
+  } */
 }
