@@ -410,25 +410,80 @@ a.prev:hover,a.next:hover {
 	background-color: #ff6666;
 }
 /* TESTIMONIALS ================================================== */
-.testimonial {
-	padding:20px 25px;
-	background-color:#fff;
-	/*Change colour here and in .arrow-down*/ float:left;
-	-moz-border-radius:8px;
-	-webkit-border-radius:8px;
-	border-radius:8px;
-	height:14rem;
-	
-}
-
+ 
+ 
+ /* 在螢幕寬度小於 768px 時，高度設為 10rem */
+@media only screen and (max-width: 767px) {
+	.testimonial {
+		 
+		padding:20px 25px;
+		background-color:#fff;
+		/*Change colour here and in .arrow-down*/ float:left;
+		-moz-border-radius:8px;
+		-webkit-border-radius:8px;
+		border-radius:8px;
+	  height: 8rem;
+	}
+  }
+  
+  /* 在螢幕寬度大於等於 768px 且小於 1024px 時，高度設為 12rem */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.testimonial {
+		
+		padding:20px 25px;
+		background-color:#fff;
+		/*Change colour here and in .arrow-down*/ float:left;
+		-moz-border-radius:8px;
+		-webkit-border-radius:8px;
+		border-radius:8px;
+	  	height: 8rem;
+	}
+  }
+  
  
 
-@media (max-width: 600px) {
+  /* 在螢幕寬度大於等於 1024px 時，高度設為 14rem */
+  @media only screen and (min-width: 1024px) {
 	.testimonial {
-		padding:10px 15px;
-		height: 8rem; /* 視口寬度小於600像素時的高度 */		 
+		
+		padding:20px 25px;
+		background-color:#fff;
+		/*Change colour here and in .arrow-down*/ float:left;
+		-moz-border-radius:8px;
+		-webkit-border-radius:8px;
+		border-radius:8px;
+		height:14rem;
+	}
+  }
+
+@media only screen and (max-width: 469px) {
+	.testimonial {
+		
+		padding:20px 25px;
+		background-color:#fff;
+		/*Change colour here and in .arrow-down*/ float:left;
+		-moz-border-radius:8px;
+		-webkit-border-radius:8px;
+		border-radius:8px;
+		height: 14rem; /* 視口寬度小於600像素時的高度 */		 
 	}
 }
+
+@media only screen and (max-width: 414px) { /* iPhone XR 螢幕寬度為 414px */
+	.testimonial {
+	  padding: 10px;
+	  background-color: #fff;
+	  /*Change colour here and in .arrow-down*/
+	  float: left;
+	  border-radius: 8px;
+	  height: 20rem; /* 視口寬度小於 414px 時的高度 */
+	}
+  }
+
+ /* border: 4mm ridge rgba(211, 220, 50, 0.6) */
+
+ 
+ 
 
 .author-wrapper {
 	width:100%;
@@ -445,19 +500,111 @@ a.prev:hover,a.next:hover {
 	border-right:0px solid transparent;
 	border-bottom:0px;
 }
-.testimonial-name {
-	/* float:left; */
-	margin:0 8px;
-	color:#ff6666;
-	padding-top:50px;
-	font-size:15px;
-	font-weight: bold;
-}
-.testimonial-name span {
+
+ /* 在螢幕寬度小於 469px 時 */
+@media (max-width: 469px) {
+	.testimonial-name {
+	   
+	  text-align: center;
+	  font-size: 12px;
+	  color:white;
+	  /* border: 4mm ridge rgba(211, 220, 50, 0.6); */
+	}
+	.testimonial-name span {
+	  display: block;
+	  font-size: 16px;
+	  weight:100%;
+	  color:white;
+	  
+	}
+  }
+
+/* 視口寬度小於600像素時的高度 */	
+@media only screen and (min-width: 600px) {
+	.testimonial-name {
+	  text-align: center;
+	  font-size: 12px;
+	  color:white;
+	}
+	.testimonial-name span {
+	  display: block;
+	  font-size: 16px;
+	  weight:100%;
+	  color:white;
+	  height:6rem;
+	  
+	}
+  }
+
+/* 在螢幕寬度小於 768px 時 */
+@media only screen and (min-width: 767px) {
+	.testimonial-name {
+	  margin: 8px auto;
+	  padding-top: 20px;
+	  text-align: center;
+	  font-size: 12px;
+	  color:white;
+	}
+	.testimonial-name span {
+	  display: block;
+	  font-size: 16px;
+	  weight:100%;
+	  color:white;
+	  
+	}
+  }
+  
+  /* 在螢幕寬度大於等於 768px 且小於 1024px 時 */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.testimonial-name {
+	  margin: 0 8px;
+	  padding-top: 0.5rem;
+	  text-align: cenleftter;
+	  font-size: 12px;
+	  height: 10rem; /* 設定固定高度 */
 	 
-	color:white;
-	font-weight:normal;
-}
+	}
+	.testimonial-name span {
+	  display: inline-block;
+	  font-size: 16px;
+	  margin-left: 5px;
+	  color:white;
+	}
+  }
+  
+  /* 在螢幕寬度大於等於 1024px 時 */
+  @media only screen and (min-width: 1024px) {
+	.testimonial-name {
+	  margin: 0 8px;
+	  padding-top: 50px;
+	  text-align: left;
+	  height: 10rem; /* 設定固定高度 */
+	  font-size: 15px;
+	}
+	.testimonial-name span {
+	  display: inline-block;
+	  font-size: 18px;
+	  margin-left: 8px;
+	  color:white;
+	}
+  }
+  
+  @media only screen and (max-width: 414px) { /* iPhone XR 螢幕寬度為 414px */
+	.testimonial-name {
+		margin: 0 8px;
+		padding-top: 50px;
+		text-align: left;
+		height: 10rem; /* 設定固定高度 */
+		font-size: 15px;
+	  }
+	  .testimonial-name span {
+		display: inline-block;
+		font-size: 18px;
+		margin-left: 8px;
+		color:white;
+	  }
+  }
+
 .hirefor {
 	margin-bottom:10px
 }
@@ -934,10 +1081,12 @@ ul.social-links>li.instagram-link:hover {
 	color: #ff6666 !Important;
 }
 /* MASONRY */
+  
 .boxportfolio4 {
 	/* float:left; */
 	padding-right:5px;
 	width:25%;
+
 	display:inline-block;
 	margin-bottom:20px;
 	position:relative;
